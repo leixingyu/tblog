@@ -6,29 +6,29 @@
     
 
     
-    <title>A Key to Unlocking 3D Software: Understanding Change of Basis Matrix | Discovery Tale</title>
+    <title>Transform Your Workflow: Learn How to Convert Matrices between DCCs | Discovery Tale</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="unreal,unity,maya,math" />
+    <meta name="keywords" content="maya,math,unreal,unity" />
     
-    <meta name="description" content="Discover how to manipulate matrices in 3D software to create stunning graphics for your games. Our tutorial covers the fundamentals of matrix mathematics and teaches you how to change matrices for 3D">
+    <meta name="description" content="Learn the essential 3D software math skills for game development with our comprehensive guide. In this post, we cover the intricacies of converting and transforming matrices, providing step-by-step in">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A Key to Unlocking 3D Software: Understanding Change of Basis Matrix">
-<meta property="og:url" content="https://www.discoverytale.com/math-change-of-basis/index.html">
+<meta property="og:title" content="Transform Your Workflow: Learn How to Convert Matrices between DCCs">
+<meta property="og:url" content="https://www.discoverytale.com/post/math-xform-conversion/index.html">
 <meta property="og:site_name" content="Discovery Tale">
-<meta property="og:description" content="Discover how to manipulate matrices in 3D software to create stunning graphics for your games. Our tutorial covers the fundamentals of matrix mathematics and teaches you how to change matrices for 3D">
+<meta property="og:description" content="Learn the essential 3D software math skills for game development with our comprehensive guide. In this post, we cover the intricacies of converting and transforming matrices, providing step-by-step in">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://www.techarthub.com/wp-content/uploads/coordinate-comparison-chart-full.jpg">
-<meta property="article:published_time" content="2022-09-25T07:00:00.000Z">
-<meta property="article:modified_time" content="2023-09-02T17:48:46.239Z">
+<meta property="og:image" content="https://i.imgur.com/6z0QneT.jpg">
+<meta property="article:published_time" content="2022-10-22T07:00:00.000Z">
+<meta property="article:modified_time" content="2023-03-29T21:09:24.000Z">
 <meta property="article:author" content="Sheldon Lee">
-<meta property="article:tag" content="unreal">
-<meta property="article:tag" content="unity">
 <meta property="article:tag" content="maya">
 <meta property="article:tag" content="math">
+<meta property="article:tag" content="unreal">
+<meta property="article:tag" content="unity">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.techarthub.com/wp-content/uploads/coordinate-comparison-chart-full.jpg">
+<meta name="twitter:image" content="https://i.imgur.com/6z0QneT.jpg">
     
 
     
@@ -153,19 +153,19 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/3d-math/">3d math</a>
+    <a class="page-title-link" href="/categories/learning-log/">learning log</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-math-change-of-basis" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-math-xform-conversion" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        A Key to Unlocking 3D Software: Understanding Change of Basis Matrix
+        Transform Your Workflow: Learn How to Convert Matrices between DCCs
         </h1>
     
 
@@ -176,16 +176,16 @@
                 
   <div class="article-date">
     <i class="fa fa-calendar"></i>
-    <a href="/math-change-of-basis/" class="article-date">
-       <time datetime="2022-09-25T07:00:00.000Z" itemprop="datePublished">2022-09-25</time>
+    <a href="/post/math-xform-conversion/" class="article-date">
+       <time datetime="2022-10-22T07:00:00.000Z" itemprop="datePublished">2022-10-22</time>
     </a>
   </div>
 
 
 <div class="article-date">
   <i class="fa fa-calendar-plus-o"></i>
-  <a href="/math-change-of-basis/" class="article-date">
-     <time datetime="2023-09-02T17:48:46.239Z" itemprop="dateModified">2023-09-02</time>
+  <a href="/post/math-xform-conversion/" class="article-date">
+     <time datetime="2023-03-29T21:09:24.000Z" itemprop="dateModified">2023-03-29</time>
   </a>
 </div>
 
@@ -212,98 +212,97 @@
 
             
 
-            <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Different DCCs uses coordinate systems with different axis directions. For example,<br>Maya by default uses a Y-up right-handed system; Unity uses a Y-up left-handed system;<br>and Unreal uses a Z-up left-handed system.</p>
-<p><figure><br><img src="https://www.techarthub.com/wp-content/uploads/coordinate-comparison-chart-full.jpg" alt="dcc-coord" width="600px" ></p>
-<p><figcaption>(Image from: Techart Hub)</figcaption><br>&lt;/figure&gt;<br><br></p>
+            <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Have you noticed the different transform values when one asset is imported<br>to a different package?</p>
+<p>When we do .fbx importing and exporting, the plugin does this conversion for<br>us. FBX is very reliable and hassle-free, but how does the math works?</p>
+<blockquote>
+<p><strong>Important:</strong> Before continuing, I highly recommend reading these previous posts</p>
 <ul>
-<li><p><strong>Up Direction</strong>: is what consider to be the up direction of the world. Moving<br>an object up translating in direction of positive <em>Y</em> in Maya and Unity, but for<br>Unreal, it’s translating in the direction of positive <em>Z</em>.</p>
+<li><a target="_blank" rel="noopener" href="https://www.xingyulei.com/post/math-euler-gimbal/">Euler Angles</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.xingyulei.com/post/math-change-of-basis/">Change of Basis</a></li>
+</ul>
+</blockquote>
+<h2 id="Transformation-Value"><a href="#Transformation-Value" class="headerlink" title="Transformation Value"></a>Transformation Value</h2><p>To demonstrate the different transform between DCCs,<br>here I have some <em>‘axis’</em> object placed in Maya, Unity and Unreal.</p>
+<p><img src="https://i.imgur.com/6z0QneT.jpg" alt="3in1" width="800px"></p>
+<p>When inspecting the ‘axis’ located on the top-right, the transformation<br>values are seen as follow:</p>
+<p><table style="width: 800px">
+  <tr>
+    <th></th>
+    <th>translation</th>
+    <th>rotation</th>
+    <th>scale</th>
+  </tr>
+  <tr>
+    <td>Maya</td>
+    <td>x: -1.31, y: 0.33, z: 0.19</td>
+    <td>x: -335, y: -12, z: 98</td>
+    <td>x: 1, y: 1, z: 1</td>
+</tr>
+  <tr>
+    <td>Unity</td>
+    <td>x: 1.31, y: 0.33, z: 0.19</td>
+    <td>x: 7, y: -27, z: -102</td>
+    <td>x: 1, y: 1, z: 1</td>
+  </tr>
+  <tr>
+    <td>Unreal</td>
+    <td>x: -1.31, y: 0.19, z: 0.33</td>
+    <td>x: 149, y: 75, z: 123</td>
+    <td>x: 1, y: 1, z: 1</td>
+  </tr>
+</table><br><br/></p>
+<p>Usually, for translation and scale there is a pattern to be found, usually<br>the operation involves swapping values between axes, and flipping them. For<br>rotation, however, the values don’t seem to have connections between one<br>another, so how can we compute them?</p>
+<p>The fundamental reason for all of this is that even though all DCCs use a<br>Cartesian coordinate system, they have different <strong>axis direction</strong> and <strong>rotation order</strong>.</p>
+<h1 id="Methods-Overview"><a href="#Methods-Overview" class="headerlink" title="Methods Overview"></a>Methods Overview</h1><p>The method I use are all fundamental matrix calculation.</p>
+<ol>
+<li>From the source package, retrieve translation, rotation and scale ($t<em>{source}, r</em>{source}, s<em>{source}$)<br>and compose a transformation matrix: $M</em>{source}$</li>
+</ol>
+<ol>
+<li>Convert the transformation matrix to the target software coordinate system<br>using change of basis operation: $M<em>{target} = M</em>{cob} <em> M_{source} </em> {M_{cob}}^{-1}$</li>
+</ol>
+<ol>
+<li>Decompose the transformation matrix: $M<em>{target}$ and re-order the<br>target translation, rotation and scale value such ($t</em>{target}, r<em>{target}, s</em>{target}$)</li>
+</ol>
+<h2 id="Composition-and-De-composition"><a href="#Composition-and-De-composition" class="headerlink" title="Composition and De-composition"></a>Composition and De-composition</h2><p>It is helpful to re-visit the transform matrix calculation, but we will later<br>use a math library to handle them.</p>
+<ul>
+<li><p><strong>Translation</strong>:</p>
+<p>a translating along $t = <d_x, d_y, d_z>$ can be thought as multiplying by<br>the translation matrix:<br>$<br>M_{translation} =<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; d_x\<br>0 &amp; 1 &amp; 0 &amp; d_y\<br>0 &amp; 0 &amp; 1 &amp; d_z\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$</p>
 </li>
-<li><p><strong>Handed System</strong>: not only affects the forward/front direction of the world,<br>it also dictates the direction of rotation; for left-handed system,<br>positive rotation about the axis is <strong>clockwise</strong>, and for right-handed system, it’s<br><strong>counter-clockwise</strong> (same way as how our hand would curl, hence the name).</p>
+<li><p><strong>Scale</strong>:</p>
+<p>a scaling upon $s = &lt;\beta<em>x, \beta_y, \beta_z&gt;$ can be thought as multiplying<br>by the scale matrix:<br>$<br>M</em>{scale} =<br>\begin{bmatrix}<br>\beta_x &amp; 0 &amp; 0 &amp; 0\<br>0 &amp; \beta_y &amp; 0 &amp; 0\<br>0 &amp; 0 &amp; \beta_z &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$</p>
+</li>
+<li><p><strong>Shear</strong>: good to know, but not very commonly use;<br>$sh = <sh_x, sh_y, sh_z>$ represents shear along <em>x</em>, <em>y</em> and <em>z</em> axis;</p>
+<p>$<br>M<em>{sh_x} =<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 0\<br>h</em>{yx} &amp; 1 &amp; 0 &amp; 0\<br>h<em>{zx} &amp; 0 &amp; 1 &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1 \<br>\end{bmatrix}<br>$<br>$<br>M</em>{sh<em>y} =<br>\begin{bmatrix}<br>1 &amp; h</em>{xy} &amp; 0 &amp; 0\<br>0 &amp; 1 &amp; 0 &amp; 0\<br>0 &amp; h<em>{zy} &amp; 1 &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$<br>$<br>M</em>{sh<em>z} =<br>\begin{bmatrix}<br>1 &amp; 0 &amp; h</em>{xz} &amp; 0\<br>0 &amp; 1 &amp; h_{yz} &amp; 0\<br>0 &amp; 0 &amp; 1 &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$</p>
+<blockquote>
+<p><img src="https://i.stack.imgur.com/90xMH.jpg" alt="shear" width="400px"></p>
+<p>A <strong>2D</strong> shearing operation</p>
+</blockquote>
+</li>
+<li><p><strong>Rotation</strong>: a rotation can be thought as a combination of shearing and scaling,<br>a visual demonstration can be found <a target="_blank" rel="noopener" href="https://youtu.be/E3Phj6J287o">here</a>.</p>
+<p>A rotation along <em>x</em>, <em>y</em> and <em>z</em> axis can then be represented as such:</p>
+<p>$<br>M<em>{r_x} =<br>\begin{bmatrix}<br>1 &amp; 0 &amp; 0 &amp; 0\<br>0 &amp; cos\theta &amp; -sin\theta &amp; 0\<br>0 &amp; sin\theta &amp; cos\theta &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$<br>$<br>M</em>{r<em>y} =<br>\begin{bmatrix}<br>cos\theta &amp; 0 &amp; sin\theta &amp; 0\<br>0 &amp; 1 &amp; 0 &amp; 0\<br>-sin\theta &amp; 0 &amp; cos\theta &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$<br>$<br>M</em>{r_z} =<br>\begin{bmatrix}<br>cos\theta &amp; -sin\theta &amp; 0 &amp; 0\<br>sin\theta &amp; cos\theta &amp; 0 &amp; 0\<br>0 &amp; 0 &amp; 1 &amp; 0\<br>0 &amp; 0 &amp; 0 &amp; 1<br>\end{bmatrix}<br>$</p>
 </li>
 </ul>
-<p>The nature of the coordinate system affects how an object’s transformation is calculated.</p>
-<p>The <strong>Change of Basis</strong> matrix transforms a vector lies in one coordinate system to<br>another.</p>
-<h2 id="Basis-Vectors"><a href="#Basis-Vectors" class="headerlink" title="Basis Vectors"></a>Basis Vectors</h2><p>In the world of 2D, the basis vectors $x$ and $y$ of one coordinate system A,<br>corresponds to<br>$<br>v_x =<br>\begin{bmatrix}<br>1 \<br>0 \<br>\end{bmatrix}<br>$<br>and<br>$<br>v_y =<br>\begin{bmatrix}<br>0 \<br>1 \<br>\end{bmatrix}<br>$</p>
-<p>Now, if these two basis vectors were to transfer to a different coordinate system B,<br>this exact set of basis vectors is written differently in that system.<br>This represents A’s basis vectors in B’s system.<br>$<br>v_x =<br>\begin{bmatrix}<br>2 \<br>1 \<br>\end{bmatrix}<br>$<br>and<br>$<br>v_y =<br>\begin{bmatrix}<br>-1 \<br>1 \<br>\end{bmatrix}<br>$</p>
-<p>Correspondingly, any vector in system B could translate to system A, pre-multiply using this<br>change of basis matrix:<br>$<br>M_{cob} =<br>\begin{bmatrix}<br>2 &amp; -1\<br>1 &amp; 1\<br>\end{bmatrix}<br>$<br>where the first column is the basis vector $x$ and second column is the<br>basis vector $y$.</p>
-<p>And alternatively, to translate any vector in system A to system B, we pre-multiply<br>by the inverse of this change of basis matrix: ${M_{cob}}^{-1}$.</p>
-<h2 id="Transformation"><a href="#Transformation" class="headerlink" title="Transformation"></a>Transformation</h2><p>Now we know how to convert vectors between coordinate systems, how do we do it for transformation?<br>Here are some simple step to understand:</p>
-<ol>
-<li><p>Given any vector in system B, apply a change of basis operation, so it’s in system A: </p>
-<p>$M_{cob} * v_B$.</p>
-</li>
-<li><p>Now we can apply a transformation represented in the same system A:</p>
-<p>$M<em>{transformA} * M</em>{cob} * v_B$.</p>
-</li>
-<li><p>Finally, we can transfer the end result back to system B by pre-multiplying the inverse<br>of the change of basis matrix:</p>
-<p> ${M<em>{cob}}^{-1} * M</em>{transformA} <em> M_{cob} </em> v_B$.</p>
-</li>
-</ol>
-<p><br/></p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The frontal part ${M<em>{cob}}^{-1} * M</em>{transformA} * M<em>{cob}$ represents the<br>same transformation but in system B: $M</em>{transformB}$.</p>
-<p>Alternatively, any transformation in system B: $M<em>{transformB}$ can be represented<br>as $M</em>{cob} <em> M_{transformB} </em> {M_{cob}}^{-1}$ in system A.</p>
-<p>Here’s the function I’ve written Python:</p>
-<script src="https://gist.github.com/leixingyu/f8849105d509bd52723f3e94a35cab67.js"></script>
+<h1 id="Real-Examples"><a href="#Real-Examples" class="headerlink" title="Real Examples"></a>Real Examples</h1><p>I used <code>numpy.ndarray</code> to store matrix, and used a third-party library<br>for computing the composition and de-composition of transformation matrix.</p>
+<script src="https://gist.github.com/leixingyu/7496f9981c699a61ccf605c672898f9d.js"></script>
 
-<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><h2 id="Maya-to-Unreal"><a href="#Maya-to-Unreal" class="headerlink" title="Maya to Unreal"></a>Maya to Unreal</h2><p>The first thing to identify is the change of basis from Maya to Unreal,<br>as illustrated before, Maya is a Y-up left-hand system and Unreal is a Z-up<br>right-hand system. </p>
-<table style="width: 500px">
-<tr>
-  <td colspan="6">Maya Axis Direction</td>
-</tr>
-  <tr>
-    <td>Forward</td>
-    <td>Z</td>
-    <td>Up</td>
-    <td>Y</td>
-    <td>Right</td>
-    <td>-X</td>
-  </tr>
-<tr>
-  <td colspan="6">Unreal Axis Direction</td>
-</tr>
-  <tr>
-    <td>Forward</td>
-    <td>-Y</td>
-    <td>Up</td>
-    <td>Z</td>
-    <td>Right</td>
-    <td>-X</td>
-  </tr>
-</table>
-
-<p>The change of basis can be represented as such<br>  $<br>  M_{cob} =<br>  \begin{bmatrix}<br>  1 &amp; 0 &amp; 0 &amp; 0\<br>  0 &amp; 0 &amp; -1 &amp; 0\<br>  0 &amp; 1 &amp; 0 &amp; 0\<br>  0 &amp; 0 &amp; 0 &amp; 1<br>  \end{bmatrix}<br>  $</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MAYA_TO_UNREAL = np.array([</span><br><span class="line">    [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, -<span class="number">1</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">], dtype=<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="Maya-to-Unity"><a href="#Maya-to-Unity" class="headerlink" title="Maya to Unity"></a>Maya to Unity</h2><p>Same thing for Maya to Unity conversion, a Y-up left-hand system to a Y-up right-hand<br>system; the $y$ and $z$ are respectively inverted between the two systems, therefore:</p>
-<table style="width: 500px">
-<tr>
-  <td colspan="6">Maya Axis Direction</td>
-</tr>
-  <tr>
-    <td>Forward</td>
-    <td>Z</td>
-    <td>Up</td>
-    <td>Y</td>
-    <td>Right</td>
-    <td>-X</td>
-  </tr>
-<tr>
-  <td colspan="6">Unity Axis Direction</td>
-</tr>
-  <tr>
-    <td>Forward</td>
-    <td>Z</td>
-    <td>Up</td>
-    <td>Y</td>
-    <td>Right</td>
-    <td>X</td>
-  </tr>
-</table>
-
-<p>The change of basis can be represented as such<br>  $<br>  M_{cob} =<br>  \begin{bmatrix}<br>  -1 &amp; 0 &amp; 0 &amp; 0\<br>  0 &amp; 1 &amp; 0 &amp; 0\<br>  0 &amp; 0 &amp; 1 &amp; 0\<br>  0 &amp; 0 &amp; 0 &amp; 1<br>  \end{bmatrix}<br>  $</p>
+<h2 id="Computation"><a href="#Computation" class="headerlink" title="Computation"></a>Computation</h2><p>Now let’s put our code to the test:</p>
+<p>Here are the transformation values I have in maya:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">maya_t = [-<span class="number">1.307</span>, <span class="number">0.331</span>, <span class="number">0.188</span>]</span><br><span class="line">maya_r = [-<span class="number">335</span>, -<span class="number">12</span>, <span class="number">98</span>]</span><br><span class="line">maya_s = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>]</span><br></pre></td></tr></table></figure>
+<h2 id="Maya-to-Unity"><a href="#Maya-to-Unity" class="headerlink" title="Maya to Unity"></a>Maya to Unity</h2><p>From the previous post, I’ve computed the change of basis matrix for Unreal</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MAYA_TO_UNITY = np.array([</span><br><span class="line">    [-<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">], dtype=<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a target="_blank" rel="noopener" href="https://youtu.be/P2LTAUO1TdA">YouTube - Change of basis | Chapter 13, Essence of linear algebra</a></p>
-<p><a target="_blank" rel="noopener" href="https://forums.unrealengine.com/t/forward-in-unreal-engine-which-is-it/93115">Unreal Engine Forum - “Forward” in unreal engine, Which is it?</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.dariomazzanti.com/uncategorized/change-of-basis/">Dario Mazzanti - Change of Basis</a></p>
+<p>Now followed by our methods:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">maya_matrix = compose_matrix(maya_t, maya_r, maya_s, order=<span class="string">&#x27;sxyz&#x27;</span>)</span><br><span class="line">unity_matrix = change_xform(maya_matrix, MAYA_TO_UNITY)</span><br><span class="line">unity_t, unity_r, unity_s = decompose_matrix(unity_matrix, order=<span class="string">&#x27;szxy&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>Result:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># transform in Unity</span></span><br><span class="line">translation = [<span class="number">1.307</span>, <span class="number">0.331</span>, <span class="number">0.188</span>] </span><br><span class="line">rotation = [<span class="number">7.3413883536944935</span>, -<span class="number">26.641453221201548</span>, -<span class="number">102.41010358310075</span>] </span><br><span class="line">scale = [<span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>]</span><br></pre></td></tr></table></figure></p>
+<p><strong>Important</strong>: for rotation since the returned values corresponds to the first, second<br>and third rotation angle specified in the rotation order:<br>which is in ‘zxy’, we need to swap values to re-order it as ‘xyz’.</p>
+<h2 id="Maya-to-Unreal"><a href="#Maya-to-Unreal" class="headerlink" title="Maya to Unreal"></a>Maya to Unreal</h2><p>Same goes for Unreal, the change of basis matrix is:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">MAYA_TO_UNREAL = np.array([</span><br><span class="line">    [<span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, -<span class="number">1</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">0</span>],</span><br><span class="line">    [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>]</span><br><span class="line">], dtype=<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure>
+<p>Then comes our conversion method:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">maya_matrix = compose_matrix(maya_t, maya_r, maya_s, order=<span class="string">&#x27;sxyz&#x27;</span>)</span><br><span class="line">unreal_matrix = change_xform(maya_matrix, MAYA_TO_UNREAL)</span><br><span class="line">unreal_t, unreal_r, unreal_s = decompose_matrix(unreal_matrix, order=<span class="string">&#x27;sxyz&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<p>Result:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># transform in Unreal</span></span><br><span class="line">translation = [-<span class="number">1.307</span>, <span class="number">0.188</span>, <span class="number">0.331</span>] </span><br><span class="line">rotation = [<span class="number">149.05728077227823</span>, <span class="number">75.61041143412538</span>, <span class="number">123.21509334477231</span>] </span><br><span class="line">scale = [<span class="number">1.0</span>, <span class="number">1.0</span>, <span class="number">1.0</span>]</span><br></pre></td></tr></table></figure></p>
+<p><strong>Caveat:</strong> I need to inverse the value of translation <em>z</em>, the reason I haven’t figured out yet,<br>but translation is hardly our concern since we just need to flip axes between Maya values;<br>The rotation value is the important one.</p>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><p><a target="_blank" rel="noopener" href="https://matthew-brett.github.io/transforms3d/index.html">Transform3d API</a></p>
+<p><a target="_blank" rel="noopener" href="https://discourse.threejs.org/t/convert-from-one-coordinate-system-to-another/13240">ThreeJS -<br>Convert from one coordinate system to another?</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.techarthub.com/a-practical-guide-to-unreal-engine-4s-coordinate-system/">Tech Art Hub - A Practical Guide to Unreal Engine 4’s Coordinate System</a></p>
 
         </div>
         <footer class="article-footer">
@@ -311,7 +310,7 @@
 
 
 
-    <a data-url="https://www.discoverytale.com/math-change-of-basis/" data-id="clo51nnrp000g38tf4u4z9838" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://www.discoverytale.com/post/math-xform-conversion/" data-id="clo51sk4i00072ktf8ifi0z50" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -381,16 +380,17 @@
             "@type": "Person",
             "name": "Sheldon Lee"
         },
-        "headline": "A Key to Unlocking 3D Software: Understanding Change of Basis Matrix",
-        "image": "https://www.discoverytale.comhttps://www.techarthub.com/wp-content/uploads/coordinate-comparison-chart-full.jpg",
-        "keywords": "unreal unity maya math",
-        "genre": "3d math",
-        "datePublished": "2022-09-25",
-        "dateCreated": "2022-09-25",
-        "dateModified": "2023-09-02",
-        "url": "https://www.discoverytale.com/math-change-of-basis/",
-        "description": "IntroductionDifferent DCCs uses coordinate systems with different axis directions. For example,Maya by default uses a Y-up right-handed system; Unity uses a Y-up left-handed system;and Unreal uses a Z",
-        "wordCount": 867
+        "headline": "Transform Your Workflow: Learn How to Convert Matrices between DCCs",
+        "image": "https://www.discoverytale.comhttps://i.imgur.com/6z0QneT.jpg",
+        "keywords": "maya math unreal unity",
+        "genre": "learning log",
+        "datePublished": "2022-10-22",
+        "dateCreated": "2022-10-22",
+        "dateModified": "2023-03-29",
+        "url": "https://www.discoverytale.com/post/math-xform-conversion/",
+        "description": "IntroductionHave you noticed the different transform values when one asset is importedto a different package?
+When we do .fbx importing and exporting, the plugin does this conversion forus. FBX is ver",
+        "wordCount": 1136
     }
 </script>
 
@@ -471,20 +471,20 @@
         
 <nav id="article-nav">
     
-        <a href="/math-xform-conversion/" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/post/general-oo-design/" id="article-nav-newer" class="article-nav-link-wrap">
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Transform Your Workflow: Learn How to Convert Matrices between DCCs
+            Object-Oriented Design: A Comprehensive Guide to Building Robust and Scalable Software Systems
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/math-euler-gimbal/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/post/math-change-of-basis/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Euler Angles and Gimbal Lock: Things You Need to Know</p>
+        <p class="article-nav-title">A Key to Unlocking 3D Software: Understanding Change of Basis Matrix</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -586,7 +586,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://www.discoverytale.com/math-change-of-basis/';
+    var disqus_url = 'https://www.discoverytale.com/post/math-xform-conversion/';
     
     (function() {
     var dsq = document.createElement('script');
