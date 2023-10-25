@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Object-Oriented Design: A Comprehensive Guide to Building Robust and Scalable Software Systems | Discovery Tale</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="pipeline" />
+    
+    <meta name="description" content="Learn about important principles and techniques in Object-Oriented Design in this comprehensive guide. Discover how to create a conceptual model, use UML class diagrams, and apply software development">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Object-Oriented Design: A Comprehensive Guide to Building Robust and Scalable Software Systems">
+<meta property="og:url" content="https://www.discoverytale.com/general-oo-design/index.html">
+<meta property="og:site_name" content="Discovery Tale">
+<meta property="og:description" content="Learn about important principles and techniques in Object-Oriented Design in this comprehensive guide. Discover how to create a conceptual model, use UML class diagrams, and apply software development">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-04-02T07:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-02T17:47:49.884Z">
+<meta property="article:author" content="Sheldon Lee">
+<meta property="article:tag" content="pipeline">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/" title="Discovery Tale" type="application/atom+xml" />
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/learning-log/">learning log</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-general-oo-design" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Object-Oriented Design: A Comprehensive Guide to Building Robust and Scalable Software Systems
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/general-oo-design/" class="article-date">
+       <time datetime="2023-04-02T07:00:00.000Z" itemprop="datePublished">2023-04-02</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/general-oo-design/" class="article-date">
+     <time datetime="2023-09-02T17:47:49.884Z" itemprop="dateModified">2023-09-02</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/pipeline/" rel="tag">pipeline</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <blockquote>
+<p>This blog is a second processed product/summary of the tutorial series:<br><a target="_blank" rel="noopener" href="https://www.linkedin.com/learning/topics/object-oriented-programming">Linkedin Learning: Object-Oriented Programming</a>.<br>Bullet points extracted by me and reformatted with help from ChatGPT.</p>
+</blockquote>
+<p>Object-oriented design is a fundamental concept in software development that<br>focuses on modeling the behavior and characteristics of real-world objects in a program.<br>By understanding the basics of object identity, properties and attributes, behavior, and class, developers can create well-designed, efficient, and maintainable software.</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p><strong>Object Identity:</strong><br>Objects are unique entities within a program that are separate and distinguishable from one another, even if they belong to the same class or type. Each object has a unique identifier that differentiates it from other objects, and this identity is essential for managing and manipulating objects within a program.</p>
+<p><strong>Properties and Attributes:</strong><br>Objects have properties or attributes that define their characteristics, such as size, weight, color, and shape. These attributes are essential for representing real-world objects in a program and can be used to distinguish between different objects of the same type.</p>
+<p><strong>Behavior:</strong><br>Objects have behavior or actions that they can perform, such as filling, swimming, or ringing. Behavior is typically defined as methods or functions that manipulate an object’s attributes or interact with other objects in the program.</p>
+<p>One of the challenges of object-oriented design is <strong>identifying what can be an object<br>in a program</strong>. In general, objects should be represented by nouns and not verbs,<br>and they should have a unique identity, attributes, and behavior. The focus should be on identifying the main objects in the program and their interactions with one another.</p>
+<p>A class is a template for creating objects in a program. It defines the name, type, attributes, and behavior of objects that belong to that class. A class can be used to create multiple objects of the same type and is an essential component of object-oriented design.</p>
+<h3 id="Steps-for-Object-Oriented-Design"><a href="#Steps-for-Object-Oriented-Design" class="headerlink" title="Steps for Object-Oriented Design"></a>Steps for Object-Oriented Design</h3><p>The process of object-oriented design involves analyzing and designing the program before writing the code.<br>This includes gathering requirements, describing the application, identifying the main objects, describing the interactions between objects, and creating a class diagram using Unified Modeling Language (UML).</p>
+<h2 id="Software-System-Requirements"><a href="#Software-System-Requirements" class="headerlink" title="Software/System Requirements"></a>Software/System Requirements</h2><p>In object-oriented design, understanding the software/system requirements is essential for creating a<br>well-designed, efficient, and maintainable program.</p>
+<h3 id="Sets-of-Requirements"><a href="#Sets-of-Requirements" class="headerlink" title="Sets of Requirements"></a>Sets of Requirements</h3><p>Software/system requirements can be divided into two sets of questions: </p>
+<ul>
+<li>what does it need to do? </li>
+<li>how should it do it? </li>
+</ul>
+<p>The first set of questions refers to the functionality of the program, while the second set refers to performance, legal, support, and security requirements.</p>
+<ul>
+<li><p><strong>Function Requirements:</strong><br>refer to what the system/application must do. These requirements capture the bare necessities of the program and define the core functionality that the program needs to provide.</p>
+</li>
+<li><p><strong>Non-Functional Requirements:</strong><br>define how the system/application should do something. These requirements are concerned with aspects such as usability, reliability, performance, supportability, design, implementation, interface, and physical constraints.</p>
+</li>
+</ul>
+<h3 id="FURPS-Requirement-Model"><a href="#FURPS-Requirement-Model" class="headerlink" title="FURPS Requirement Model"></a>FURPS Requirement Model</h3><p>The FURPS requirement model is a framework for thinking about software/system requirements.<br>FURPS stands for functionality, usability, reliability, performance, and supportability. </p>
+<ul>
+<li><p><strong>Functionality</strong><br>refers to the capabilities of the system, while the other four elements are non-functional requirements.</p>
+</li>
+<li><p><strong>Usability</strong><br>focuses on the user and include factors such as human factors UI and documentation.<br>The usability of the program is essential for ensuring that users can efficiently and effectively use the system.</p>
+</li>
+<li><p><strong>Reliability</strong><br>is concerned with predictability, availability, and failure rate.<br>These requirements ensure that the program operates consistently and reliably.</p>
+</li>
+<li><p><strong>Performance</strong><br>relates to speed, efficiency, and limitations. These requirements ensure that the program operates efficiently and effectively, even when processing large amounts of data.</p>
+</li>
+<li><p><strong>Supportability</strong><br>is concerned with extensibility, configurability, and testability. These requirements ensure that the program can be maintained and updated over time.</p>
+</li>
+</ul>
+<p>Design, Implementation, Interface, and Physical Constraints<br>In addition to the FURPS requirements, other non-functional requirements include design (how the program is built), implementation (the programming language used and standards to follow), interface (the ability of the program to interface with other systems), and physical constraints (the hardware limitations of the system).</p>
+<h2 id="Use-Case"><a href="#Use-Case" class="headerlink" title="Use Case"></a>Use Case</h2><p>The use case is a scenario that outlines a particular goal of an actor (user) with the system. It consists of the following elements:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[Title] </span><br><span class="line">    Short and simple goal</span><br><span class="line">[Primary Actor] </span><br><span class="line">    The user who desires to achieve the goal</span><br><span class="line">[Success Scenario] </span><br><span class="line">    Steps or paragraphs describing how to achieve the goal</span><br></pre></td></tr></table></figure>
+<p>To create a use case,<br>identify the actors who interact with the system and separate them by their roles in the use case, not job titles.<br>Focus on the intent of the goal and not go into too specific steps or too broad a goal.<br>The scenario should be concise and avoid detailed technical implementation or UI elements.<br>Focus on the “sunny-day” scenario and avoid including rarely encountered scenarios.<br>Avoid needless words and keep the scenario short and concise.</p>
+<h2 id="Conceptual-Model"><a href="#Conceptual-Model" class="headerlink" title="Conceptual Model"></a>Conceptual Model</h2><p>In object-oriented design, creating a conceptual model is a<br>crucial step in developing a software or system.<br>A conceptual model helps to identify the objects and their relationships that will form the backbone of the software.<br>Here are the steps involved in creating a conceptual model.</p>
+<ul>
+<li><p><strong>Identify Objects:</strong><br>The first step is to identify the objects that will be used as class objects in the system.<br>This can be done by looking at the user story or use case and picking out the relevant <strong>nouns.</strong> </p>
+<ul>
+<li>For example, in a user story about ordering a meal, the relevant objects might include “customer,” “menu,” and “order.”</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Identify Class Relationships:</strong><br>Once the objects have been identified, the next step is to connect them with lines to show their relationships.<br>It is important to write down the <strong>verbs</strong> on each line to avoid using generic words like “use.”<br>Instead, use verbs that describe the relationship between the objects. </p>
+<ul>
+<li>For example, in the meal ordering system, the “customer” might “place” an “order” from the “menu.”</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>Figure Out Class Responsibilities:</strong><br>The final step is to figure out the responsibilities of each class.<br>This involves identifying the behaviors or actions that each class will perform.<br>This can be done by looking at the user story or use case and picking out the relevant verbs. </p>
+<ul>
+<li>For example, in the meal ordering system, the “menu” class might have the responsibility of “displaying” the available items while the “order” class might have the responsibility of “calculating” the total cost of the meal.</li>
+</ul>
+</li>
+</ul>
+<p>It is important to note that each behavior should belong to the class that is most responsible for it.<br>A behavior usually involves multiple objects, but each object should be responsible for itself.<br>Avoid putting too much responsibility on a single object, which can lead to a “god object” that controls everything in the system.</p>
+<p>In addition to these steps, another useful tool for creating a conceptual model is CRC (Class Responsibility Collaboration) cards.<br>These cards can be used to organize the classes and their responsibilities, making it easier to visualize the system and identify any potential issues.</p>
+<h2 id="Class-Diagram-and-Class-Relationship"><a href="#Class-Diagram-and-Class-Relationship" class="headerlink" title="Class Diagram and Class Relationship"></a>Class Diagram and Class Relationship</h2><p>In object-oriented design, UML class diagrams are used to represent the structure of a system’s classes and the relationships between them.<br>Here are some important considerations when creating UML class diagrams.</p>
+<p>Each class in a UML class diagram should have a name, attributes, and behaviors.<br>When creating classes, it’s important to focus on the behaviors of the objects,<br>rather than just their attributes. This is because objects are meant to do things,<br>not just hold data.<br>In general, it’s recommended to keep as many class attributes and methods as private as possible,<br>only making them public if we are certain that other objects will need to use them.</p>
+<p><strong>Constructor:</strong></p>
+<p>Constructors are considered as behavior and should be treated as such when creating UML class diagrams.<br>In UML, a constructor is represented as a method with the same name as the class.</p>
+<p><strong>Interface:</strong></p>
+<p>In UML, abstract classes and interfaces are represented as types.<br>Abstract classes are used to represent a general category of objects,<br>while interfaces are used to represent shared capabilities or behaviors.<br>For example, a draw() interface can be shared between different types of objects that can be drawn on a screen.<br>While objects of different types cannot be categorized under the same abstract class,<br>they can all share the draw() interface to be able to draw on the screen.<br>A system can iterate through all objects and call the draw() interface to update the screen.</p>
+<h2 id="Principles-and-Patterns"><a href="#Principles-and-Patterns" class="headerlink" title="Principles and Patterns"></a>Principles and Patterns</h2><p>There are several principles and patterns that can help make our software development more efficient and effective.</p>
+<ol>
+<li><p>Single Responsibility Principle: A class should have only one responsibility. Avoid creating god objects that try to do everything. Instead, split responsibilities into multiple classes.</p>
+</li>
+<li><p>Don’t Repeat Yourself (DRY): Avoid duplicating code. Reuse code and extract common functionality into methods or classes.</p>
+</li>
+<li><p>You Ain’t Gonna Need It (YAGNI): Don’t overdo it. Only add features that are necessary and useful. Avoid adding unnecessary complexity.</p>
+</li>
+<li><p>Error Handling and Prompt to Guide Users: Design our software to handle errors gracefully and provide clear prompts to guide users. Good error handling can improve the user experience and prevent bugs.</p>
+</li>
+<li><p>Software Testing: Testing is an important part of software development. Write automated tests to ensure that our code is working as intended and to catch regressions.</p>
+</li>
+<li><p>Design Patterns: Design patterns are reusable solutions to common software design problems. </p>
+</li>
+</ol>
+<h3 id="Design-Pattern"><a href="#Design-Pattern" class="headerlink" title="Design Pattern"></a>Design Pattern</h3><p>They provide a template to help structure our code around.<br>One of the most well-known books on design patterns is <em>“Design Patterns: Elements of Reusable Object-Oriented Software”</em><br>by the “Gang of Four”, which describes 23 patterns.</p>
+<ul>
+<li><p><strong>Creational Patterns:</strong><br>These patterns deal with the instantiation of objects. Examples include Abstract Factory, Builder, Factory Method, Prototype, and Singleton.</p>
+</li>
+<li><p><strong>Structural Patterns:</strong><br>These patterns deal with how classes are designed and composed. Examples include Adapter, Bridge, Composite, Decorator, Facade, Flyweight, and Proxy.</p>
+</li>
+<li><p><strong>Behavioral Patterns:</strong><br>These patterns deal with communication between objects. Examples include Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, and Visitor.</p>
+</li>
+</ul>
+<p>By following these principles and patterns, we can create software that is more modular, maintainable, and scalable.</p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://www.discoverytale.com/general-oo-design/" data-id="clo51nnrl000638tffgss9q0n" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Sheldon Lee"
+        },
+        "headline": "Object-Oriented Design: A Comprehensive Guide to Building Robust and Scalable Software Systems",
+        "image": "https://www.discoverytale.com",
+        "keywords": "pipeline",
+        "genre": "learning log",
+        "datePublished": "2023-04-02",
+        "dateCreated": "2023-04-02",
+        "dateModified": "2023-09-02",
+        "url": "https://www.discoverytale.com/general-oo-design/",
+        "description": "
+This blog is a second processed product/summary of the tutorial series:Linkedin Learning: Object-Oriented Programming.Bullet points extracted by me and reformatted with help from ChatGPT.
+
+Object-ori",
+        "wordCount": 1635
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Hello World
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/math-xform-conversion/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Transform Your Workflow: Learn How to Convert Matrices between DCCs</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">Popular</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/3d-math/">3d math</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/graphics-programming/">graphics programming</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/learning-log/">learning log</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/maya-python-api/">maya python api</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/" rel="tag">c++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maya/" rel="tag">maya</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pipeline/" rel="tag">pipeline</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rendering/" rel="tag">rendering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unity/" rel="tag">unity</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unreal/" rel="tag">unreal</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2023 Sheldon Lee</p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://www.discoverytale.com/general-oo-design/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>

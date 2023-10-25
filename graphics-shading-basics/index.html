@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>Beginner&#39;s Guide to Graphics Lighting and Shading | Discovery Tale</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="rendering" />
+    
+    <meta name="description" content="Learn the secrets of creating stunning computer graphics game development lighting and shading with our in-depth guide. From basic concepts to advanced techniques, our tutorial covers everything you n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Beginner&#39;s Guide to Graphics Lighting and Shading">
+<meta property="og:url" content="https://www.discoverytale.com/graphics-shading-basics/index.html">
+<meta property="og:site_name" content="Discovery Tale">
+<meta property="og:description" content="Learn the secrets of creating stunning computer graphics game development lighting and shading with our in-depth guide. From basic concepts to advanced techniques, our tutorial covers everything you n">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.researchgate.net/profile/Christoph-Guetter/publication/235696712/figure/fig1/AS:299742132228097@1448475501091/The-graphics-pipeline-in-OpenGL-consists-of-these-5-steps-in-the-new-generation-of-cards.png">
+<meta property="article:published_time" content="2020-09-16T07:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-02T17:48:27.551Z">
+<meta property="article:author" content="Sheldon Lee">
+<meta property="article:tag" content="rendering">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.researchgate.net/profile/Christoph-Guetter/publication/235696712/figure/fig1/AS:299742132228097@1448475501091/The-graphics-pipeline-in-OpenGL-consists-of-these-5-steps-in-the-new-generation-of-cards.png">
+    
+
+    
+        <link rel="alternate" href="/" title="Discovery Tale" type="application/atom+xml" />
+    
+
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/titillium-web/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+<script src="/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/graphics-programming/">graphics programming</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-graphics-shading-basics" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Beginner&#39;s Guide to Graphics Lighting and Shading
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+  <div class="article-date">
+    <i class="fa fa-calendar"></i>
+    <a href="/graphics-shading-basics/" class="article-date">
+       <time datetime="2020-09-16T07:00:00.000Z" itemprop="datePublished">2020-09-16</time>
+    </a>
+  </div>
+
+
+<div class="article-date">
+  <i class="fa fa-calendar-plus-o"></i>
+  <a href="/graphics-shading-basics/" class="article-date">
+     <time datetime="2023-09-02T17:48:27.551Z" itemprop="dateModified">2023-09-02</time>
+  </a>
+</div>
+
+
+                
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/rendering/" rel="tag">rendering</a>
+    </div>
+
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            
+
+            
+
+            
+
+            <h3 id="Glossary"><a href="#Glossary" class="headerlink" title="Glossary"></a>Glossary</h3><p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Glossary_of_computer_graphics">Wikipedia - Computer Graphics Glossary</a></p>
+<p><strong>Shader</strong>: programs running on gpu that describes general computation (vertex transformation: vertex shader;<br>shading calculation: fragment shader)</p>
+<p><strong>G-buffer</strong>: a screen space representation of geometry and material information (e.g. color, normal, position/depth)</p>
+<p><strong>Fragment</strong>: is the corresponding pixel generated by geometric primitives,<br>but a pixel on screen can be a product of more than one fragment due to Z-buffering, blending etc.</p>
+<h3 id="Vertex-lighting-vs-Per-pixel-lighting"><a href="#Vertex-lighting-vs-Per-pixel-lighting" class="headerlink" title="Vertex lighting vs. Per-pixel lighting"></a>Vertex lighting vs. Per-pixel lighting</h3><p><img src="https://www.researchgate.net/profile/Christoph-Guetter/publication/235696712/figure/fig1/AS:299742132228097@1448475501091/The-graphics-pipeline-in-OpenGL-consists-of-these-5-steps-in-the-new-generation-of-cards.png" alt="modern graphics pipeline"></p>
+<h4 id="Vertex-Lighting"><a href="#Vertex-Lighting" class="headerlink" title="Vertex Lighting"></a>Vertex Lighting</h4><ul>
+<li><p>Lighting is computed per-vertex</p>
+</li>
+<li><p>calculation happens in the vertex shader</p>
+</li>
+<li><p>lighting/color information is<br>then linearly interpolated across faces and rasterized</p>
+</li>
+<li><p>it is cheaper, faster (since there are fewer vertices compared to pixels) but noticeable artifact with low-poly objects</p>
+</li>
+</ul>
+<h4 id="Per-Pixel-Lighting"><a href="#Per-Pixel-Lighting" class="headerlink" title="Per-Pixel Lighting"></a>Per-Pixel Lighting</h4><ul>
+<li><p>Lighting is computed per-pixel/fragment (but what is this exactly? see the example below)</p>
+</li>
+<li><p>Calculation happens in the fragment shader</p>
+</li>
+<li><p>normal information (passed from vertex shader) is interpolated on the faces, lighting/color is calculated and rasterized.</p>
+</li>
+<li><p>it is more expensive but less artifact</p>
+</li>
+</ul>
+<h3 id="Example-of-a-per-pixel-lighting-shader"><a href="#Example-of-a-per-pixel-lighting-shader" class="headerlink" title="Example of a per-pixel lighting shader"></a>Example of a per-pixel lighting shader</h3><h4 id="Vertex-Shader"><a href="#Vertex-Shader" class="headerlink" title="Vertex Shader"></a>Vertex Shader</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#version 330 core</span><br><span class="line">layout (location = 0) in vec3 aPos;</span><br><span class="line">layout (location = 1) in vec3 aNormal;</span><br><span class="line"></span><br><span class="line">out vec3 FragPos;</span><br><span class="line">out vec3 Normal;</span><br><span class="line"></span><br><span class="line">uniform mat4 model;</span><br><span class="line">uniform mat4 view;</span><br><span class="line">uniform mat4 projection;</span><br><span class="line"></span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">    FragPos = vec3(model * vec4(aPos, 1.0));</span><br><span class="line">    Normal = mat3(transpose(inverse(model))) * aNormal;  </span><br><span class="line">    </span><br><span class="line">    gl_Position = projection * view * vec4(FragPos, 1.0);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="Fragment-Shader"><a href="#Fragment-Shader" class="headerlink" title="Fragment Shader"></a>Fragment Shader</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">#version 330 core</span><br><span class="line">out vec4 FragColor;</span><br><span class="line"></span><br><span class="line">in vec3 Normal;  </span><br><span class="line">in vec3 FragPos;  </span><br><span class="line">  </span><br><span class="line">uniform vec3 lightPos; </span><br><span class="line">uniform vec3 viewPos; </span><br><span class="line">uniform vec3 lightColor;</span><br><span class="line">uniform vec3 objectColor;</span><br><span class="line"></span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">    // ambient</span><br><span class="line">    float ambientStrength = 0.1;</span><br><span class="line">    vec3 ambient = ambientStrength * lightColor;</span><br><span class="line">  	</span><br><span class="line">    // diffuse </span><br><span class="line">    vec3 norm = normalize(Normal);</span><br><span class="line">    vec3 lightDir = normalize(lightPos - FragPos);</span><br><span class="line">    float diff = max(dot(norm, lightDir), 0.0);</span><br><span class="line">    vec3 diffuse = diff * lightColor;</span><br><span class="line">    </span><br><span class="line">    // specular</span><br><span class="line">    float specularStrength = 0.5;</span><br><span class="line">    vec3 viewDir = normalize(viewPos - FragPos);</span><br><span class="line">    vec3 reflectDir = reflect(-lightDir, norm);  </span><br><span class="line">    float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);</span><br><span class="line">    vec3 specular = specularStrength * spec * lightColor;  </span><br><span class="line">        </span><br><span class="line">    vec3 result = (ambient + diffuse + specular) * objectColor;</span><br><span class="line">    FragColor = vec4(result, 1.0);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<p>As we can see, fragment position and normal information are passed into the fragment shader<br>from vertex shader (where the pre-compute happens), the lighting calculation (Phong lighting)<br>is calculated per-fragment. </p>
+<p>On a related note: gpu cost are related to </p>
+<ol>
+<li>how many vertices are passed in to the gpu from<br>buffer and </li>
+<li>how complex the lighting calculation is in the fragment shader (this could be<br>the algorithm/model complexity, and the number of passes);</li>
+</ol>
+<hr>
+<h3 id="Forward-vs-Deferred-Rendering"><a href="#Forward-vs-Deferred-Rendering" class="headerlink" title="Forward vs. Deferred Rendering"></a>Forward vs. Deferred Rendering</h3><h4 id="Forward-Rendering"><a href="#Forward-Rendering" class="headerlink" title="Forward Rendering"></a>Forward Rendering</h4><p>The standard, out-of-the-box rendering technique</p>
+<p>Geometries are passed to gpu, going through vertex shader and fragment shader,<br>with each geometry and each light computed separately one at a time to form the final render.</p>
+<p>Render complexity: O(num of geometry fragments * num of lights)</p>
+<p><img src="https://cdn.tutsplus.com/cdn-cgi/image/width=600/gamedev/uploads/2013/11/forward-v2.png" alt="forward rendering"></p>
+<h4 id="Deferred-Rendering"><a href="#Deferred-Rendering" class="headerlink" title="Deferred Rendering"></a>Deferred Rendering</h4><p>Render is deferred until all geometry has been processed</p>
+<p>Geometries are passed to gpu, going through vertex shader and fragment shader (without lighting pass),<br>final rendering is computed/combined with multiple render passes<br>(one pass for getting all geometry information to G-buffer,<br>second pass for compute lighting based on the G-buffer).</p>
+<p>Render complexity: O(screen resolution * num of lights)</p>
+<p><img src="https://cdn.tutsplus.com/cdn-cgi/image/width=600/gamedev/uploads/2013/11/deferred-v2.png" alt="deferred rendering"></p>
+<h4 id="Discussion"><a href="#Discussion" class="headerlink" title="Discussion"></a>Discussion</h4><p>Everything all comes down to lighting, as gpu can easily handle vertex information,<br>but the most expensive are lighting calculation which can easily slow down the rendering.<br>Forward rendering iterates and compute each fragments of each geometry, no matter if it overlaps or is hidden<br>by other fragments. So for each pixel, we could have already run multiple fragment shaders.</p>
+<p>This is where deferred rendering come in handy, the G-buffer stores information such as color, normal and depth.<br>The lighting later on can know how to produce the final render by combining all the information (For example: depth test can<br>also cull out all the fragments that are being obscured). So essentially, each pixel only runs a single fragment shader.</p>
+<hr>
+<h3 id="Rasterization-vs-Ray-tracing"><a href="#Rasterization-vs-Ray-tracing" class="headerlink" title="Rasterization vs. Ray tracing"></a>Rasterization vs. Ray tracing</h3><p>The forward, deferred rendering techniques are all in the realm of rasterization, which is the<br>most popular and traditional real-time rendering technique. With the advance of hardware, ray tracing,<br>which is computationally demanding (usually used in films/animation) can now be used in<br>real-time video games.</p>
+<h4 id="Rasterization"><a href="#Rasterization" class="headerlink" title="Rasterization"></a>Rasterization</h4><p>We gather objects information and projects each one by one on screen (per fragment), fragment shader<br>computes the final color of every fragment to form pixels on screen.</p>
+<p>The fundamental of rasterizing is that for each object/geometry, we look at (rasterize it) it’s verts/triangles<br> to cover pixels.</p>
+<p>So, as discussed in deferred rendering, every object is drawn but not all of them are displayed on screen.<br>This overdraw can be accelerated by using deferred shading’s depth test.</p>
+<p><img src="https://www.scratchapixel.com/images/upload/rasterization/raytracing-raster5.png?" alt="rasterization"></p>
+<h4 id="Ray-tracing"><a href="#Ray-tracing" class="headerlink" title="Ray tracing"></a>Ray tracing</h4><p>We cast rays from our eyes (camera) for each pixel and gather information of those rays as they travel<br>through/intersects with objects and interacts with lights<br>to form the final render on screen.</p>
+<p>The fundamental of ray tracing is that for each pixel, we look at (shoot a ray) each object/geometry to see<br>how they contribute to the color of that pixel.</p>
+<p>As for ray tracing, we need to shoot many rays for each pixel, and more when there are reflection and refraction.<br>One way to accelerate this is to use bounding volume.</p>
+<p><img src="https://i.stack.imgur.com/e3SXv.png" alt="ray tracing"></p>
+<h4 id="Discussion-1"><a href="#Discussion-1" class="headerlink" title="Discussion"></a>Discussion</h4><p>The most significant difference in visual is that ray tracing is physically more accurate<br>than rasterization, thus more realistic. Which is more apparent in dynamic environment with<br>objects that reflects and refract. Rasterization needs many estimation techniques to handle lighting and shadowing<br>such as more render passes, baked light map, cubemap reflection, but ray tracing gets all the results out of the box.</p>
+<p><img src="https://i.stack.imgur.com/e9CSY.png" alt="rasterization vs. ray tracing"></p>
+<hr>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><p><a target="_blank" rel="noopener" href="https://gamedevelopment.tutsplus.com/articles/forward-rendering-vs-deferred-rendering--gamedev-12342">Envato tuts+ - Forward Rendering vs. Deferred Rendering</a></p>
+<p><a target="_blank" rel="noopener" href="https://learnopengl.com/Advanced-Lighting/Deferred-Shading">Learn OpenGL - Deferred Shading</a></p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Deferred_shading#Deferred_lighting">Wikipedia - Deferred Lighting</a></p>
+<p><a target="_blank" rel="noopener" href="https://learnopengl.com/Lighting/Basic-Lighting">Learn OpenGL - Basic Lighting</a></p>
+<p><a target="_blank" rel="noopener" href="https://knowww.eu/nodes/59b8e93cd54a862e9d7e414a">Knowww - Per-vertex vs. per-fragment lighting</a></p>
+<p><a target="_blank" rel="noopener" href="https://answers.unity.com/questions/1749305">Unity Forum - What’s the difference between per-pixel and per-vertex lit in Forward Rendering?</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=dhVJE7g3hig">Youtube - OpenGL Fragment Shaders | How Do Fragment Shaders Work?</a></p>
+<p><a target="_blank" rel="noopener" href="https://developer.nvidia.com/blog/ray-tracing-essentials-part-2-rasterization-versus-ray-tracing/">Nvidia - Ray Tracing Essentials</a></p>
+<p><a target="_blank" rel="noopener" href="https://computergraphics.stackexchange.com/questions/4585">Stack Exchange - Mirror Reflections: Ray Tracing or Rasterization?</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.quora.com/What-is-the-diferrence-between-ray-tracing-and-very-high-shader-details">Quora - What is the difference between ray tracing and very high shader details?</a></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://www.discoverytale.com/graphics-shading-basics/" data-id="clo51nnre000138tf3n1e3q8r" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Sheldon Lee"
+        },
+        "headline": "Beginner&#39;s Guide to Graphics Lighting and Shading",
+        "image": "https://www.discoverytale.comhttps://www.researchgate.net/profile/Christoph-Guetter/publication/235696712/figure/fig1/AS:299742132228097@1448475501091/The-graphics-pipeline-in-OpenGL-consists-of-these-5-steps-in-the-new-generation-of-cards.png",
+        "keywords": "rendering",
+        "genre": "graphics programming",
+        "datePublished": "2020-09-16",
+        "dateCreated": "2020-09-16",
+        "dateModified": "2023-09-02",
+        "url": "https://www.discoverytale.com/graphics-shading-basics/",
+        "description": "GlossaryWikipedia - Computer Graphics Glossary
+Shader: programs running on gpu that describes general computation (vertex transformation: vertex shader;shading calculation: fragment shader)
+G-buffer: ",
+        "wordCount": 1214
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>follow:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="stack-overflow" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-stack-overflow"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank" rel="noopener">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/math-euler-gimbal/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">newer</strong>
+        <p class="article-nav-title">
+        
+            Euler Angles and Gimbal Lock: Things You Need to Know
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/cpp-reference-pointer/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Comprehensive Guide to C++ Reference and Pointer</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">Popular</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">categories</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/3d-math/">3d math</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/graphics-programming/">graphics programming</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/learning-log/">learning log</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/maya-python-api/">maya python api</a><span class="category-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">archives</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/09/">September 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">September 2019</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">tags</h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/c/" rel="tag">c++</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/math/" rel="tag">math</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maya/" rel="tag">maya</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pipeline/" rel="tag">pipeline</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rendering/" rel="tag">rendering</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unity/" rel="tag">unity</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/unreal/" rel="tag">unreal</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2023 Sheldon Lee</p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://www.discoverytale.com/graphics-shading-basics/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+
+    
+    
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+</body>
+</html>
