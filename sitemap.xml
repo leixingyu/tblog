@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.totrav.com/post/us-sd-fishermanlanding-review/</loc>
     
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +13,16 @@
   <url>
     <loc>https://www.totrav.com/post/us-mo-columbia/</loc>
     
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/post/us-fl-miami/</loc>
+    
+    <lastmod>2023-11-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,29 +58,36 @@
 
   <url>
     <loc>https://www.totrav.com/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://www.totrav.com/tags/weekend-trip-ideas/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://www.totrav.com/tags/day-trip-ideas/</loc>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/tags/day-trip-ideas/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://www.totrav.com/tags/weekend-trip-ideas/</loc>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/tags/review/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/tags/week-long-trip-ideas/</loc>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -80,42 +96,70 @@
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/california/</loc>
-    <lastmod>2023-11-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/florida/</loc>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/indiana/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/missouri/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/california/</loc>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/florida/miami/</loc>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/indiana/michigan-city/</loc>
+    <lastmod>2023-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/missouri/columbia/</loc>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/california/san-diego/</loc>
-    <lastmod>2023-11-01</lastmod>
+    <lastmod>2023-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
