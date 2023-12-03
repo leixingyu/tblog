@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.totrav.com/post/us-pa-pittsburgh/</loc>
+    
+    <lastmod>2023-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.totrav.com/post/us-ny-niagara/</loc>
     
     <lastmod>2023-11-26</lastmod>
@@ -94,36 +103,36 @@
 
   <url>
     <loc>https://www.totrav.com/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://www.totrav.com/tags/week-long-trip-ideas/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.totrav.com/tags/weekend-trip-ideas/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/tags/day-trip-ideas/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/tags/review/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/tags/week-long-trip-ideas/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -132,119 +141,133 @@
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/new-york/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/missouri/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/california/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/illinois/</loc>
-    <lastmod>2023-11-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/indiana/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/florida/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/new-york/niagara/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/missouri/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/missouri/columbia/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/new-york/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/california/san-diego/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/illinois/chicago/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/ohio/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/cleveland/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/pennsylvania/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/put-in-bay/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <loc>https://www.totrav.com/categories/united-states/illinois/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/indiana/michigan-city/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.totrav.com/categories/united-states/florida/miami/</loc>
-    <lastmod>2023-11-26</lastmod>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/missouri/columbia/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/new-york/niagara/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/cleveland/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/pennsylvania/pittsburgh/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/illinois/chicago/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/put-in-bay/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/california/</loc>
+    <lastmod>2023-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/california/san-diego/</loc>
+    <lastmod>2023-12-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
