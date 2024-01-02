@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/post/template/test/</loc>
-    
-    <lastmod>2024-01-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.totrav.com/post/review-fishermanlanding/</loc>
     
     <lastmod>2024-01-02</lastmod>
@@ -137,14 +128,14 @@
 
   
   <url>
-    <loc>https://www.totrav.com/tags/review/</loc>
+    <loc>https://www.totrav.com/tags/week-long-trip-ideas/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.totrav.com/tags/week-long-trip-ideas/</loc>
+    <loc>https://www.totrav.com/tags/review/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -174,34 +165,6 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/california/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/missouri/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/illinois/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.totrav.com/categories/united-states/florida/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,7 +172,7 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/</loc>
+    <loc>https://www.totrav.com/categories/united-states/dc/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -223,7 +186,28 @@
   </url>
   
   <url>
+    <loc>https://www.totrav.com/categories/united-states/california/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/illinois/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.totrav.com/categories/united-states/pennsylvania/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -237,28 +221,7 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/california/san-diego/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/missouri/columbia/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/illinois/chicago/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/florida/miami/</loc>
+    <loc>https://www.totrav.com/categories/united-states/missouri/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -272,14 +235,7 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/put-in-bay/</loc>
-    <lastmod>2024-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/cedar-point/</loc>
+    <loc>https://www.totrav.com/categories/united-states/florida/miami/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -293,7 +249,14 @@
   </url>
   
   <url>
-    <loc>https://www.totrav.com/categories/united-states/ohio/cleveland/</loc>
+    <loc>https://www.totrav.com/categories/united-states/california/san-diego/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/illinois/chicago/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -307,7 +270,35 @@
   </url>
   
   <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/cedar-point/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.totrav.com/categories/united-states/new-york/niagara/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/missouri/columbia/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/cleveland/</loc>
+    <lastmod>2024-01-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.totrav.com/categories/united-states/ohio/put-in-bay/</loc>
     <lastmod>2024-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
